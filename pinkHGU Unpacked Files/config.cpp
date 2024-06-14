@@ -4,11 +4,26 @@ class CfgPatches
 	{
 		author="TubaHorse";
 		name="PINK HGU TEST";
-		units[]={"pinkHGU"};
-		weapons[]={};
+		units[]={"PILOT_DUMMY"};
+		weapons[]={"pinkHGU"};
 		requiredVersion=0.1;
 		requiredAddons[]={"A3_characters_f"};
 	};
+	class pinkHGU_ITEMS
+	{
+		version=1.0;
+		units[]={"pinkHGU"};
+	}
+};
+class cfgFactionClasses
+{
+	class Pink_Helmet_Gang_F
+	{
+		displayName="Pink Helmet Gang";
+		priority = 2;
+		side = 1;
+		icon = "";
+	}
 };
 class CfgVehicles
 {
@@ -57,24 +72,29 @@ class CfgVehicles
 class CfgWeapons
 {
 	class ItemCore;
-	class H_PilotHelmetHeli_B: ItemCore
+	class H_HelmetB: ItemCore
     { 
         class ItemInfo; 
     };
-	class pinkHGU: H_PilotHelmetHeli_B
+	class pinkHGU: H_HelmetB
 	{
+		author="TubaHorse";
 		displayName = "pinkHGU";
+		_generalMacro="pinkHGU"
 		picture = "";
-		model = "\a3\characters_f\common\headgear_helmet_heli.p3d";
+		model = "A3\Characters_F\Common\headgear_helmet_heli";
 		hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\pinkHGU\Data\helmet_heli_pink_co.paa"};
+        hiddenSelectionsTextures[] =
+		{
+			"\pinkHGU\Data\helmet_heli_pink_B.paa"
+		};
         // hiddenSelectionsMaterials[] = {"\pinkHGU\Data\helmet_heli.rvmat"};
 		// ^ Not sure if this is needed
 		class ItemInfo: ItemInfo
         {
             mass=20; // Set different than default to test if mod was affecting the item
 			uniformModel="A3\Characters_F\Common\headgear_helmet_heli";
-			modelSides[]={3,1};
+			modelSides[]={2,3};
 			class HitpointsProtectionInfo
 			{
 				class Head
