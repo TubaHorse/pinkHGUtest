@@ -67,7 +67,7 @@ class CfgWeapons
 		picture = "";
 		model = "\a3\characters_f\common\headgear_helmet_heli.p3d";
 		hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\Data\helmet_heli_pink_co.paa"};3
+        hiddenSelectionsTextures[] = {"\Data\helmet_heli_pink_co.paa"};
         // hiddenSelectionsMaterials[] = {"\pinkHGU\Data\helmet_heli.rvmat"};
 		// ^ Not sure if this is needed
 		class ItemInfo: ItemInfo
