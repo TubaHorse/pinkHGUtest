@@ -1,10 +1,7 @@
 name = "Pink HGU";
-picture = "-";
-logoSmall = "cagemblem.paa";
-logo = "cagemblem.paa";
-logoOver = "cagemblem.paa";
-action = "-";
-actionName = "-";
+logoSmall = "cag_ca.paa";
+logo = "cag_ca.paa";
+logoOver = "cag_ca.paa";
 tooltipOwned = "Pink HGU";
 dlcColor[] =
 {
