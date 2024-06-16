@@ -4,10 +4,4 @@ With this mod for Arma 3 I am attempting to turn the default helicopter helmet w
 The @pinkHGU folder is the mod with the .pbo packed and config binarised
 The pinkHGU Unpacked Files folder has the contents of the pbo unpacked and config.cpp not binarised for ease of editing/looking
 
-- To make the texture I used https://paa.gruppe-adler.de/ to turn the default arma helmet_heli_blk_co.paa into a .png
-- I edited the .png in photoshop to doodle on it, saved it as helmet_heli_blk_coo.png
-- Used the converter to turn it back into a .paa file.
-- Opened the .paa in TexView 2 to confirm that the edits remain
-- Binarised the config (not present in this upload), packed the .pbo
-- Ran the game, opened ACE Arsenal
-- Game does not load the helmet textures. It shows the visor floating in front of the character's face
+Mod now works, texture is just needed
